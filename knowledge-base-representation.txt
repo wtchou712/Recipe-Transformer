@@ -1,0 +1,18 @@
+Transforming to vegetarian/vegan/pescatarian/lactose-free options: 
+1. Store a list of ingredients or a 1-to-1 ingredient of replacements for ingredients as well how it is prepared. For example, chicken -> tofu, beef -> mushrooms, milk -> almond milk
+2. Look through the ingredients of recipe we want to transform. 
+3. If we find an ingredient that does not follow the rule of the option desired, we will replace that with the assigned replacement that is in our knowledge base. For example, 
+if we find chicken, we'll change it to tofu, and change the preparation for that ingredient as well. 
+
+Transforming cooking method: 
+1. Store a database of cooking methods as well as preparation and tools 
+2. Look through the recipe that we want to transform
+3. Replace the old tool used to the new tool used (spatula -> tongs)
+4. Replace the cooking device (oven -> grill)
+5. Replace the units of cooking (300 degrees -> medium-high heat)
+6. Replace the preparation (preheating oven -> preheating a pot of water)
+
+Transforming to healthier alternatives: 
+1. Store a database of healthier alternatives for an ingredient depending on the type of alternative. For example, in low carb we store a relation from rice to quinoa or for low fat whole milk to skim milk or butter to olive oil
+2. Store a database of which ingredients should be changed 
+3. Look through the ingredients and replace the ingredient that should be changed based on the alternative to transform to.
