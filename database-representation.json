@@ -1,0 +1,26 @@
+{
+    "ingredients": [{
+            "name": "fresh chopped basil", 
+            "quantity": 1/4, 
+            "measurement": "cup", 
+        },
+        {
+            "name": "skinless, boneless chicken breast",
+            "quantity": 4,
+            "measurement" "pieces", 
+        },
+        {
+            "name": "olive oil", 
+            "quantity": 1, 
+            "measurement": "tablespoon",
+        }
+    ],
+    "tools": ["pan", "whisk", "knife", "oven", "grater"],
+    "primate cooking method": "bake", 
+    "other cooking methods": ["chop", "stir", "boil", "simmer", "grate","bake"],
+    "directions": ["Preheat an oven to 450 degrees F (230 degrees C).",
+                   "Place chicken breasts between two sheets of heavy plastic (resealable freezer bags work well) on a solid, level surface.",
+                   "Firmly pound chicken with the smooth side of a meat mallet to a thickness of 1/2-inch. ",
+                   "Season chicken thoroughly with salt and pepper.",
+                   "Beat eggs in a shallow bowl and set aside."]
+}
