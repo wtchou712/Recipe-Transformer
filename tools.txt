@@ -1,203 +1,203 @@
 spoon
-V-rack
-Aluminum foil
+v-rack
+aluminum foil
 frying pan
-Apple corer
-Apple cutter
+apple corer
+apple cutter
 griller
 stove
 spoon
 barbecue
 grill
 rack
-Baster
+baster
 oven
-Blow torch
+blow torch
 baking pan
 baking dish
 baking sheets
-Baking stone
+baking stone
 mortar
-Bottle opener
-Bowl
-Braiser pan
-Brasero
-Brazier pot
-Bread pan
-Broiler pan
-Browning tray
-Butane torch
-Butcher block
-Butcher paper
-Cake and pie server
-Cake pan
-Can opener
+bottle opener
+bowl
+braiser pan
+brasero
+brazier pot
+bread pan
+broiler pan
+browning tray
+butane torch
+butcher block
+butcher paper
+cake and pie server
+cake pan
+can opener
 thermometer
-Casserole dish
-Casserole pan
-Cassole
+casserole dish
+casserole pan
+cassole
 skillet
 dutch oven
 stove
-Cheesecloth
-Cheese scoop
+cheesecloth
+cheese scoop
 knife
-Cherry pitter
-Cocktail stick
-Coffee filter
+cherry pitter
+cocktail stick
+coffee filter
 coffeemaker
-Colander
-Convection microwave
-Cookie cutter
-Cookie press
-Cookie sheet
-Cooking pot
-Cooking sheet
+colander
+convection microwave
+cookie cutter
+cookie press
+cookie sheet
+cooking pot
+cooking sheet
 cooling racks
 sauce pan
-Corkscrew
-Crab cracker
-Crepe pan
-Cutting board
-Coffee percolator
-Coffeemaker
+corkscrew
+crab cracker
+crepe pan
+cutting board
+coffee percolator
+coffeemaker
 steamer
-Convection oven
-Cook stove
-Crepe maker
-Double boiler
-Doufeu
-Dough blender
-Dough scraper
-Dutch oven
-Deep fryer
-Eggbeater
-Egg poacher
-Egg separator
-Egg slicer
-Egg timer
-Electric kettle
-Electric water boiler
-Earth oven
-Electric cooker
-Electric stove
-Energy regulator
-Fish scalar
+convection oven
+cook stove
+crepe maker
+double boiler
+doufeu
+dough blender
+dough scraper
+dutch oven
+deep fryer
+eggbeater
+egg poacher
+egg separator
+egg slicer
+egg timer
+electric kettle
+electric water boiler
+earth oven
+electric cooker
+electric stove
+energy regulator
+fish scalar
 grill pan
-Flat rack
-Flour sifter
-Fondue pot
-Food processor
-Frying pan
-Frying skillet
-Funnel
-Flattop grill
-Food steamer
-Gas stove
-Garlic press
-Grater
-Greaseproof paper
-Griddle
-Grill pan
+flat rack
+flour sifter
+fondue pot
+food processor
+frying pan
+frying skillet
+funnel
+flattop grill
+food steamer
+gas stove
+garlic press
+grater
+greaseproof paper
+griddle
+grill pan
 griddle pan
-Hand held electric mixer
-Hibachi
-Hot Box (appliance)
-Hot plate
-Induction cooking
-Juicer
-Kettle
-Kitchen utensil
-Kettle
-Kitchen oven
-Kitchen stove
-Kitchen range
-Ladle
-Lemon squeezer
-Loaf pan
-Lobster pick
-Mandoline
-Measuring cup
-Measuring jug
-Measuring spoon
-Meat grinder
-Meat tenderizer
-Meat thermometer
-Meatloaf pan
-Melon baller
-Mortar and pestle
-Microwave
-Nutcracker
-Nutmeg grater
-Oven
-Oven glove
+hand held electric mixer
+hibachi
+hot box (appliance)
+hot plate
+induction cooking
+juicer
+kettle
+kitchen utensil
+kettle
+kitchen oven
+kitchen stove
+kitchen range
+ladle
+lemon squeezer
+loaf pan
+lobster pick
+mandoline
+measuring cup
+measuring jug
+measuring spoon
+meat grinder
+meat tenderizer
+meat thermometer
+meatloaf pan
+melon baller
+mortar and pestle
+microwave
+nutcracker
+nutmeg grater
+oven
+oven glove
 can opener
-Paella pan
-Parchment paper
-Pasta spoon
-Pastry bag
-Pastry blender
-Pastry brush
-Pastry wheel
-Peeler
-Pepper mill
-Pie pan
-Pizza cutter
-Plastic wrap
-Potato masher
-Potato ricer
+paella pan
+parchment paper
+pasta spoon
+pastry bag
+pastry blender
+pastry brush
+pastry wheel
+peeler
+pepper mill
+pie pan
+pizza cutter
+plastic wrap
+potato masher
+potato ricer
 pot boiler
-Pot holder
-Pothook
+pot holder
+pothook
 shears
-Pressure cooker
-Pudding cloth
-Ramekin
-Rice spoon
-Ricer
+pressure cooker
+pudding cloth
+ramekin
+rice spoon
+ricer
 rice cooker
-Roasting pan
-Roasting rack
-Rolling pin
+roasting pan
+roasting rack
+rolling pin
 salad spoon
-Salt and pepper shakers
-Saran
-Saucier
+salt and pepper shakers
+saran
+saucier
 saute pan
-Saucepan
-Scales
-Scissors
-Scoop
-Scraper
-Serving spoon
-Serving tongs
-Skewer
-Skillet
+saucepan
+scales
+scissors
+scoop
+scraper
+serving spoon
+serving tongs
+skewer
+skillet
 soup ladle
-Spatula
-Stir-fry pan
+spatula
+stir-fry pan
 stockpot
-Sugar spoon
-Sugar thermometer
-Slow cooker
-Stove
+sugar spoon
+sugar thermometer
+slow cooker
+stove
 strainer
-Tablespoon
-Tea infuser
-Tin foil
-Tin opener
-Toaster oven
-Tongs
-Tea stove
-Toaster
-Turkey fryer
-Vegetable peeler
-Vertical rack
-Vacuum fryer
-Wax paper
-Whisk
-Wok
-Wonder pot
-Wooden spoon
-Waffle iron
-Zester
+tablespoon
+tea infuser
+tin foil
+tin opener
+toaster oven
+tongs
+tea stove
+toaster
+turkey fryer
+vegetable peeler
+vertical rack
+vacuum fryer
+wax paper
+whisk
+wok
+wonder pot
+wooden spoon
+waffle iron
+zester
