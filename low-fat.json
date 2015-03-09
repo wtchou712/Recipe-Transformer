@@ -1,0 +1,67 @@
+{
+	"low-fat": [
+		{
+			"bacon" : "turkey bacon"
+		},
+		{
+			"liver" : "chicken"
+		},
+		{
+			"foie gras" : "chicken"
+		},
+		{
+			"sausage" : "low fat sausage"
+		},
+		{
+			"hot dog" : "low fat hot dog"
+		},
+		{
+			"whole milk" : "skim milk"
+		},
+		{
+			"2% milk" : "skim milk"
+		},
+		{
+			"cheddar cheese" : "sharp light cheddar cheese"
+		},
+		{
+			"cream cheese" : "low fat cream cheese"
+		},
+		{
+			"gouda cheese" : "brie cheese"
+		},
+		{
+			"leicester cheese" : "sharp light cheddar cheese"
+		},
+		{
+			"mascarpone cheese" : "brie cheese"
+		},
+		{
+			"parmesan cheese" : "mozarella cheese"
+		},
+		{
+			"goose" : "chicken"
+		},
+		{
+			"duck" : "chicken"
+		},
+		{
+			"eggs" : "egg whites"
+		},
+		{
+			"egg" : "egg white"
+		},
+		{
+			"beef" : "bison"
+		},
+		{
+			"vegetable shortening" : "spreadable butter"
+		},
+		{
+			"butter" : "spreadable butter"
+		},
+		{
+			"canola oil" : "olive oil"
+		}
+	]
+}
