@@ -25,10 +25,10 @@
       "caribou" : "swordfish"
     },
     {
-      "goat" : "lactose-free pepper jack cheese"
+      "goat" : "salmon steak"
     },
     {
-      "ham" : ""
+      "ham" : "salmon steak"
     },
     {
       "lamb" : "salmon steak"
@@ -37,13 +37,13 @@
       "elk" : "swordfish"
     },
     {
-      "lamb" : "lactose-free pepper jack cheese"
+      "lamb" : "salmon steak"
     },
     {
       "moose" : "swordfish"
     },
     {
-      "organ meats" : "lactose-free replacement cheese"
+      "organ meats" : "salmon steak"
     },
     {
       "pork" : "scallops"
@@ -52,13 +52,13 @@
       "pork chop" : "scallops"
     },
     {
-      "bacon" : "lactose-free replacement cheese"
+      "bacon" : "scallops"
     },
     {
-      "rabbit" : "halibut"
+      "rabbit" : "scallops"
     },
     {
-      "tripe" : "lactose-free replacement cheese"
+      "tripe" : "halibut"
     },
     {
       "veal" : "swordfish"
@@ -85,46 +85,46 @@
       "chicken thigh" : "tilapia"
     },
     {
-      "cornish game hen" : "lactose-free greek yogurt"
+      "cornish game hen" : "tilapia"
     },
     {
-      "duck" : ""
+      "duck" : "tilapia"
     },
     {
-      "duck liver" : "lactose-free plain yogurt"
+      "duck liver" : "tilapia"
     },
     {
-      "goose" : "lactose-free plain yogurt"
+      "goose" : "tilapia"
     },
     {
-      "goose liver" : "almond milk"
+      "goose liver" : "tilapia"
     },
     {
-      "grouse" : "almond milk"
+      "grouse" : "tilapia"
     },
     {
-      "foie gras" : "almond milk"
+      "foie gras" : "tilapia"
     },
     {
-      "guinea hen" : "almond milk"
+      "guinea hen" : "tilapia"
     },
     {
-      "liver" : "dairy-free sour cream"
+      "liver" : "tilapia"
     },
     {
-      "organs" : "coconut milk"
+      "organs" : "tilapia"
     },
     {
-      "partridge" : "coconut cream"
+      "partridge" : "tilapia"
     },
     {
-      "pheasant" : "coconut milk"
+      "pheasant" : "tilapia"
     },
     {
-      "quail" : "margarine"
+      "quail" : "tilapia"
     },
     {
-      "squab" : "soy based ice cream"
+      "squab" : "tilapia"
     },
     {
       "chuck steak" : "tuna steak"
@@ -219,24 +219,6 @@
     {
       "rack of lamb" : "salmon steak"
     },
-    {
-      "" : "dairy-free sour cream"
-    },
-    {
-      "ground lamb" : "coconut milk"
-    },
-    {
-      "lamb shoulder" : "coconut cream"
-    },
-    {
-      "lamb loin" : "coconut milk"
-    },
-    {
-      "lamb ribs" : "margarine"
-    },
-    {
-      "lamb chop" : "soy based ice cream"
-    }
   ]
 }
 
