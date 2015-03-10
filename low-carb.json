@@ -1,124 +1,121 @@
 {
-“low-carb”:[
-{
-	“sugar”: “splenda”
-},
-{
-	“brown sugar”: “splenda”
-},
-{
-	“syrup”: “sugar free syrup”
-},
+	"low-carb":[
+		{
+			"sugar": "splenda"
+		},
+		{
+			"brown sugar": "splenda"
+		},
+		{
+			"syrup": "sugar free syrup"
+		},
 
-{
-	“potatoes”: “cauliflower”
-},
+		{
+			"potatoes": "cauliflower"
+		},
 
-{
-	“sweet potatoes”: “squash”
-},
-{
-	“quinoa”: “cauliflower couscous”
-},
+		{
+			"sweet potatoes": "squash"
+		},
+		{
+			"quinoa": "cauliflower couscous"
+		},
 
-{
-	“white rice”: “cauliflower couscous”
-},
-{
-	“rigatoni”: “cauliflower”
-},
-{
-	“spaghetti”: “squash spaghetti”
-},
-{
-	“cavatelli”: “cauliflower”
-},
-{
-	“conchiglie”: “cauliflower”
-},
-{
-	“small shells”: “cauliflower”
-},
-{
-	“medium shells”: “cauliflower”
-},
-{
-	“large shells”: “cauliflower”
-},
-{
-	“elbow macaroni”: “cauliflower”
-},
-{
-	“farfalle”: “cauliflower”
-},
-{
-	“fusilli”: “zucchini spaghetti”
-},
-{
-	“lasagna”: “zucchini lasagna”
-},
-{
-	“linguine”: “zucchini spaghetti”
-},
-{
-	“macaroni”: “cauliflower”
-},
-{
-	“couscous”: “cauliflower couscous”
-},
-{
-	“ravioli”: “squash wrapped ravioli”
-},
-{
-	“rotini”: “whole wheat rotini”
-},
-{
-	“tortellini”: “squash wrapped tortellini”
-},
-{
-	“pasta”: “zucchini spaghetti”
-},
-{
-	“flour”: “almond flour”
-},
-{
-	“black beans”: “black soy beans”
-},
-{
-	“red beans”: “black soy beans”
-},
-{
-	“pinto beans”: “black soy beans”
-},
-{
-	“great northern beans”: “black soy beans”
-},
-{
-	“chick peas”: “black soy beans”
-},
-{
-	“cannellini beans”: “black soy beans”
-},
-{
-	“lima beans”: “black soy beans”
-},
-{
-	“fava beans”: “black soy beans”
-},
-{
-	“mung beans”: “black soy beans”
-},
-{
-	“garbanzo”: “black soy beans”
-},
-{
-	“lentils”: “black soy beans”
-},
-{
-	“gnocchi”: “cauliflower”
-}
-
-
-
-]
+		{
+			"white rice": "cauliflower couscous"
+		},
+		{
+			"rigatoni": "cauliflower"
+		},
+		{
+			"spaghetti": "squash spaghetti"
+		},
+		{
+			"cavatelli": "cauliflower"
+		},
+		{
+			"conchiglie": "cauliflower"
+		},
+		{
+			"small shells": "cauliflower"
+		},
+		{
+			"medium shells": "cauliflower"
+		},
+		{
+			"large shells": "cauliflower"
+		},
+		{
+			"elbow macaroni": "cauliflower"
+		},
+		{
+			"farfalle": "cauliflower"
+		},
+		{
+			"fusilli": "zucchini spaghetti"
+		},
+		{
+			"lasagna": "zucchini lasagna"
+		},
+		{
+			"linguine": "zucchini spaghetti"
+		},
+		{
+			"macaroni": "cauliflower"
+		},
+		{
+			"couscous": "cauliflower couscous"
+		},
+		{
+			"ravioli": "squash wrapped ravioli"
+		},
+		{
+			"rotini": "whole wheat rotini"
+		},
+		{
+			"tortellini": "squash wrapped tortellini"
+		},
+		{
+			"pasta": "zucchini spaghetti"
+		},
+		{
+			"flour": "almond flour"
+		},
+		{
+			"black beans": "black soy beans"
+		},
+		{
+			"red beans": "black soy beans"
+		},
+		{
+			"pinto beans": "black soy beans"
+		},
+		{
+			"great northern beans": "black soy beans"
+		},
+		{
+			"chick peas": "black soy beans"
+		},
+		{
+			"cannellini beans": "black soy beans"
+		},
+		{
+			"lima beans": "black soy beans"
+		},
+		{
+			"fava beans": "black soy beans"
+		},
+		{
+			"mung beans": "black soy beans"
+		},
+		{
+			"garbanzo": "black soy beans"
+		},
+		{
+			"lentils": "black soy beans"
+		},
+		{
+			"gnocchi": "cauliflower"
+		}
+	]
 }

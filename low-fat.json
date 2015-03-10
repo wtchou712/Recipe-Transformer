@@ -37,13 +37,22 @@
 			"mascarpone cheese" : "brie cheese"
 		},
 		{
-			"parmesan cheese" : "mozarella cheese"
+			"parmesan cheese" : "low-fat mozzarella cheese"
 		},
 		{
-			"goose" : "chicken"
+			"mozzarella cheese" : "low-fat mozzarella cheese"
 		},
 		{
-			"duck" : "chicken"
+			"goose" : "skinlesschicken"
+		},
+		{
+			"duck" : "skinless chicken"
+		},
+		{
+			"chicken" : "skinless chicken"
+		},
+		{
+			"turkey" : "skinless turkey"
 		},
 		{
 			"eggs" : "egg whites"
@@ -58,10 +67,22 @@
 			"vegetable shortening" : "spreadable butter"
 		},
 		{
+			"shortening" : "spreadable butter"
+		},
+		{
 			"butter" : "spreadable butter"
 		},
 		{
-			"canola oil" : "olive oil"
+			"canola oil" : "cooking spray"
+		},
+		{
+			"olive oil" : "cooking spray"
+		},
+		{
+			"vegetable oil" : "cooking spray"
+		},
+		{
+			"mayonnaise" : "low fat mayonnaise"
 		}
 	]
 }

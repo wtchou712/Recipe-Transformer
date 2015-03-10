@@ -6,89 +6,90 @@
     "simmer",
     "bake"
   ],
-  "tools": [
-    "oven",
-    "dutch oven",
-    "dutch oven",
-    "oven",
-    "saucepan",
-    "casserole dish"
+  "all cooking methods": [
+    "cook",
+    "boil",
+    "brown",
+    "simmer",
+    "stir",
+    "reduce",
+    "bake"
   ],
   "ingredients": [
     {
-      "measurement": "tablespoon",
+      "quantity": "1",
       "name": "olive oil",
-      "quantity": "1"
+      "measurement": "tablespoon"
     },
     {
-      "measurement": "pieces",
+      "quantity": "2",
       "name": "onions, peeled and chopped",
-      "quantity": "2"
+      "measurement": "pieces"
     },
     {
-      "measurement": "pieces",
+      "quantity": "1",
       "name": "green bell pepper, chopped",
-      "quantity": "1"
+      "measurement": "pieces"
     },
     {
-      "measurement": "cloves",
+      "quantity": "3",
       "name": "garlic, minced",
-      "quantity": "3"
+      "measurement": "cloves"
     },
     {
-      "measurement": "teaspoons",
+      "quantity": "2",
       "name": "dried basil",
-      "quantity": "2"
+      "measurement": "teaspoons"
     },
     {
-      "measurement": "teaspoons",
+      "quantity": "2",
       "name": "dried oregano",
-      "quantity": "2"
+      "measurement": "teaspoons"
     },
     {
-      "measurement": "teaspoons",
+      "quantity": "2",
       "name": "dried thyme leaves",
-      "quantity": "2"
+      "measurement": "teaspoons"
     },
     {
-      "measurement": "pound",
+      "quantity": "1",
       "name": "lean ground beef",
-      "quantity": "1"
+      "measurement": "pound"
     },
     {
-      "measurement": "pound",
+      "quantity": "1/2",
       "name": "lean ground pork, veal or crumbled sausage",
-      "quantity": "1/2"
+      "measurement": "pound"
     },
     {
-      "measurement": "cups",
+      "quantity": "4",
       "name": "Heinz® Tomato Juice",
-      "quantity": "4"
+      "measurement": "cups"
     },
     {
-      "measurement": "(455",
+      "quantity": "1",
       "name": "Heinz® Chili Sauce, Chunky with Sweet Peppers",
-      "quantity": "1"
+      "measurement": "(455"
     },
     {
-      "measurement": "(156",
+      "quantity": "1",
       "name": "Heinz Tomato Paste",
-      "quantity": "1"
+      "measurement": "(156"
     },
     {
-      "measurement": "tablespoon",
+      "quantity": "1",
       "name": "Heinz Worcestershire Sauce",
-      "quantity": "1"
+      "measurement": "tablespoon"
     },
     {
-      "measurement": "pieces",
-      "name": "oven-ready lasagna noodles",
-      "quantity": "12"
+      "quantity": "12",
+      "name": "zucchini lasagna",
+      "measurement": "pieces"
     },
     {
-      "measurement": "cups",
+      "quantity": "3",
       "name": "shredded mozzarella cheese",
-      "quantity": "3"
+      "measurement": "cups"
     }
   ],
   "servings": [
@@ -109,13 +110,12 @@
     "Remove foil and bake for 15 minutes or until golden",
     "Let stand for 10 minutes before serving."
   ],
-  "all cooking methods": [
-    "cook",
-    "boil",
-    "brown",
-    "simmer",
-    "stir",
-    "reduce",
-    "bake"
+  "tools": [
+    "oven",
+    "dutch oven",
+    "dutch oven",
+    "oven",
+    "saucepan",
+    "casserole dish"
   ]
 }

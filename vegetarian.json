@@ -1,158 +1,156 @@
 {
   "vegetarian": [
     {
-      "ground chicken" : "ground chickpea"
+        "ground chicken" : "ground chickpea"
     },
     {
-      "chicken": "tofu",
-      "veal" : "tofu",
-      "bison" : "tofu",
-      "lamb" : "tofu",
-      "mutton" : "tofu",
-      "frog" : "tofu",
-      "goat" : "tofu",
-      "horse" : "tofu",
-      "liver" : "tofu",
-      "kidney" : "tofu",
-      "tongue" : "tofu",
-      "hare" : "tofu",
-      "rabbit" : "tofu",
-      "abalone" : "tofu",
-      "snail" : "tofu",
-      "goose" : "tofu",
-      "fowl" : "tofu",
-      "pheasant" : "tofu",
-      "quail" : "tofu",
-      "tuna" : "tofu" ,
-      "turbot" : "tofu", 
-      "wahoo" : "tofu", 
-      "whitefish" :"tofu",
-      "fish" : "tofu",
-      "eel" : "tofu",
-      "duck" : "tofu"
+        "chicken": "tofu",
+        "veal" : "tofu",
+        "bison" : "tofu",
+        "lamb" : "tofu",
+        "mutton" : "tofu",
+        "frog" : "tofu",
+        "goat" : "tofu",
+        "horse" : "tofu",
+        "liver" : "tofu",
+        "kidney" : "tofu",
+        "tongue" : "tofu",
+        "hare" : "tofu",
+        "rabbit" : "tofu",
+        "abalone" : "tofu",
+        "snail" : "tofu",
+        "goose" : "tofu",
+        "fowl" : "tofu",
+        "pheasant" : "tofu",
+        "quail" : "tofu",
+        "tuna" : "tofu" ,
+        "turbot" : "tofu", 
+        "wahoo" : "tofu", 
+        "whitefish" :"tofu",
+        "fish" : "tofu",
+        "eel" : "tofu",
+        "duck" : "tofu"
     },
     {
-      "greek yogurt": "soy milk yogurt",
-       "yogurt": "soy milk yogurt"
+        "greek yogurt": "soy milk yogurt",
+        "yogurt": "soy milk yogurt"
     },
     {
-      "hot dog": "tofu dog"
+        "hot dog": "tofu dog"
     },
     {
-      "hamburger" : "veggie burger"
+        "hamburger" : "veggie burger"
+    },
+    {   
+        "beef" : "seitan",
+        "oxtail" : "seitan"
     },
     {
-      "ground beef" : "black beans",
-      "ground pork" : "black beans"
+        "ground beef" : "black beans",
+        "ground pork" : "black beans"
     },
     {
-      "beef" : "seitan",
-      "oxtail" : "seitan"
+        "pork" : "tempeh",
+        "brisket" : "tempeh",
+        "reindeer" :"tempeh", 
+        "venison" : "tempeh", 
+        "elk" : "tempeh", 
+        "moose" : "tempeh"
     },
     {
-      "pork" : "tempeh",
-      "brisket" : "tempeh",
-      "reindeer" :"tempeh", 
-      "venison" : "tempeh", 
-      "elk" : "tempeh", 
-      "moose" : "tempeh"
+        "steak" : "portobello mushroom",
+        "filet mignon" : "portobello mushroom",
+        "flank" : "portobello mushroom",
+        "ribeye" : "portobello mushroom",
+        "chuck roast" : "portobello mushroom"
     },
     {
-      "steak" : "portobello mushroom",
-      "filet mignon" : "portobello mushroom",
-      "flank" : "portobello mushroom",
-      "ribeye" : "portobello mushroom"
-    },
-
-    {
-      "tendon" : "seitan",
-      "tripe" : "seitan",
-      "intestine" : "seitan",
-      "cornish hen" : "seitan",
-      "crawfish" : "seitan",
-      "scallop" : "seitan",
-      "prawn" : "seitan" 
+        "tendon" : "seitan",
+        "tripe" : "seitan",
+        "intestine" : "seitan",
+        "cornish hen" : "seitan",
+        "crawfish" : "seitan",
+        "scallop" : "seitan",
+        "prawn" : "seitan" 
     },
     {
-      "chorizo" : "vegetarian sausage",
-      "sausage" : "vegetarian sausage"
+        "chorizo" : "vegetarian sausage",
+        "sausage" : "vegetarian sausage"
     },
     {
-      "bacon" : "vegetarian bacon"
+        "bacon" : "vegetarian bacon"
     },
     {
-      "turkey" : "tofurky"
+        "turkey" : "tofurky"
     },
     {
-      "chicken broth" : "vegetable stock",
-      "chicken stock" : "vegetable stock",
-      "beef stock" : "vegetable stock",
-      "beef broth" : "vegetable stock" 
+        "chicken broth" : "vegetable stock",
+        "chicken stock" : "vegetable stock",
+        "beef stock" : "vegetable stock",
+        "beef broth" : "vegetable stock" 
     },
     {
-      "meatballs" : "veggie meatballs"
+        "meatballs" : "veggie meatballs"
     },
     {
-      "scallops" : "veggie scallops"
+        "scallops" : "veggie scallops"
     },
     {
-      "crab": "vegan crab steak"
+        "crab": "vegan crab steak"
     },
     {
-      "squid" : "vegan squid"
+        "squid" : "vegan squid"
     },
     {
-      "shrimp" : "vegan shrimp roll"
+        "shrimp" : "vegan shrimp roll"
     },
     {
-      "fish cake" : "vegan fish cake"
+        "fish cake" : "vegan fish cake"
     },
     {
-      "fish sticks" : "vegan fishless sticks"
+        "fish sticks" : "vegan fishless sticks"
     },
     {
-      "salmon" : "vegan salmon"
+        "salmon" : "vegan salmon"
     },
     {
-      "egg yolk": "vegan egg yolk"
+        "egg yolk": "vegan egg yolk"
     },
     {
-      "egg" : "egg replacer"
+        "egg" : "egg replacer"
     },
     {
-      "milk" : "soymilk"
+        "milk" : "soymilk"
     },
     {
-      "butter" : "oil-based butter spread"
+        "butter" : "oil-based butter spread"
     },
     {
-      "mayonaisse" : "Earth Balance sandwich spread"
+        "mayonaisse" : "Earth Balance sandwich spread"
     },
     {
-      "ice cream" : "soy ice cream"
+        "ice cream" : "soy ice cream"
     },
     {
-      "ham" : "vegetarian ham",
-      "spam" : "vegetarian ham"
+        "ham" : "vegetarian ham",
+        "spam" : "vegetarian ham"
     },
     {
-      "foie gras" : "avocado"
-    },
-
-    {
-      "clam" : "oyster mushroom",
-      "mussell" : "oyster mushroom",
-      "oyster" : "oyster mushroom"
+        "foie gras" : "avocado"
     },
     {
-      "cuttlefish" : "shiitake mushroom",
-      "octopus" : "shiitake mushroom",
-      "calamari" : "shiitake mushroom"
+        "clam" : "oyster mushroom",
+        "mussell" : "oyster mushroom",
+        "oyster" : "oyster mushroom"
     },
     {
-      "lobster" : "vegan crab",
+        "cuttlefish" : "shiitake mushroom",
+        "octopus" : "shiitake mushroom",
+        "calamari" : "shiitake mushroom"
+    },
+    {
+        "lobster" : "vegan crab"
     }
-    
   ]
 }
 

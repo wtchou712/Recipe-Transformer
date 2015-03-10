@@ -4,6 +4,15 @@
       "beef" : "tuna steak"
     },
     {
+      "ground beef" : "ground tuna"
+    },
+    {
+      "ground lamb" : "ground salmon"
+    },
+    {
+      "ground pork" : "ground salmon"
+    },
+    {
       "beef heart" : "tuna steak"
     },
     {
@@ -61,10 +70,10 @@
       "tripe" : "halibut"
     },
     {
-      "veal" : "swordfish"
+      "veal" : "scallops"
     },
     {
-      "venison" : "swordfish"
+      "venison" : "salmon"
     },
     {
       "chicken" : "tilapia"
@@ -202,12 +211,6 @@
       "ribeye" : "tuna steak"
     },
     {
-      "ground beef" : "dairy-free sour cream"
-    },
-    {
-      "ground lamb" : "salmon steak"
-    },
-    {
       "lamb shoulder" : "salmon steak"
     },
     {
@@ -218,10 +221,10 @@
     },
     {
       "lamb chop" : "salmon steak"
-    }
+    },
     {
       "rack of lamb" : "salmon steak"
-    },
+    }
   ]
 }
 
