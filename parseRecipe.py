@@ -5,6 +5,18 @@ import requests
 import json
 from collections import OrderedDict
 
+
+def remove_duplicates(values):
+    output = []
+    seen = set()
+    for value in values:
+        # If value has not been encountered yet,
+        # ... add it to both list and set.
+        if value not in seen:
+            output.append(value)
+            seen.add(value)
+    return output
+
 def parseRecipe(link):
 	page = requests.get(link)
 	tree = html.fromstring(page.text)
@@ -66,14 +78,14 @@ def parseRecipe(link):
 				all_methods.append(method);
 
 
-		directions+=direction.split('. ')
+		directions.append(direction.split('. '))
 
 
 	recipe = {}
 	recipe['ingredients'] = ingredients
 	recipe['directions'] = directions
 	recipe['servings'] = servings
-	recipe['tools'] = tools
+	recipe['tools'] = remove_duplicates(tools)
 	recipe['primary cooking methods'] = primary_methods
 	recipe['all cooking methods'] = all_methods
 

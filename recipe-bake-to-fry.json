@@ -1,0 +1,92 @@
+{
+  "primary cooking methods": [
+    "boil",
+    "cook",
+    "brown",
+    "simmer",
+    "pan-fry"
+  ],
+  "tools": [
+    "skillet",
+    "stove",
+    "frying pan"
+  ],
+  "ingredients": [
+    {
+      "quantity": "1",
+      "name": "dry ziti pasta",
+      "measurement": "pound"
+    },
+    {
+      "quantity": "1",
+      "name": "onion, chopped",
+      "measurement": "pieces"
+    },
+    {
+      "quantity": "1",
+      "name": "lean ground beef",
+      "measurement": "pound"
+    },
+    {
+      "quantity": "2",
+      "name": "spaghetti sauce",
+      "measurement": "(26"
+    },
+    {
+      "quantity": "6",
+      "name": "provolone cheese, sliced",
+      "measurement": "ounces"
+    },
+    {
+      "quantity": "1",
+      "name": "sour cream",
+      "measurement": "1/2"
+    },
+    {
+      "quantity": "6",
+      "name": "mozzarella cheese, shredded",
+      "measurement": "ounces"
+    },
+    {
+      "quantity": "2",
+      "name": "grated Parmesan cheese",
+      "measurement": "tablespoons"
+    },
+    {
+      "quantity": "2",
+      "name": "olive oil",
+      "measurement": "tablespoons"
+    }
+  ],
+  "servings": [
+    "10 servings"
+  ],
+  "directions": [
+    [
+      "Bring a large pot of lightly salted water to a boil",
+      "Add ziti pasta, and cook until al dente, about 8 minutes; drain."
+    ],
+    [
+      "In a large skillet, brown onion and ground beef over medium heat",
+      "Add spaghetti sauce, and simmer 15 minutes."
+    ],
+    [
+      "Add 2 tablespoons of olive oil to pan and set the stove to medium",
+      "Butter a 9x13 inch frying pan",
+      "Layer as follows: 1/2 of the ziti, Provolone cheese, sour cream, 1/2 sauce mixture, remaining ziti, mozzarella cheese and remaining sauce mixture",
+      "Top with grated Parmesan cheese."
+    ],
+    [
+      "Fry for 6 minutes in the frying pan, or until cheeses are melted. "
+    ]
+  ],
+  "all cooking methods": [
+    "boil",
+    "cook",
+    "brown",
+    "simmer",
+    "cream",
+    "grate",
+    "pan-fry"
+  ]
+}
