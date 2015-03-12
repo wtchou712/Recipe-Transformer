@@ -91,7 +91,7 @@ def parseRecipe(link):
 	recipe['servings'] = servings
 	recipe['cooking tools'] = remove_duplicates(tools)
 	recipe['primary cooking method'] = most_common(primary_methods)
-	recipe['cooking methods'] = all_methods
+	recipe['cooking methods'] = remove_duplicates(all_methods)
 
 	with open('Recipes/recipe.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)
