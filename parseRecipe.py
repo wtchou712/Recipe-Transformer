@@ -44,7 +44,7 @@ def parseRecipe(link):
 			offset+=1
 			ing['quantity'] = "to taste"
 			ing['measurement'] = "N/A"
-			print "offset"
+			#print "offset"
 		else: 
 			quantity = ingr_amount[i-offset].split()
 			if len(quantity) is 1: 
@@ -85,12 +85,15 @@ def parseRecipe(link):
 
 
 	recipe = {}
+	recipe['url'] = link
 	recipe['ingredients'] = ingredients
 	recipe['directions'] = directions
 	recipe['servings'] = servings
-	recipe['tools'] = remove_duplicates(tools)
-	recipe['primary cooking methods'] = most_common(primary_methods)
-	recipe['all cooking methods'] = all_methods
+	recipe['cooking tools'] = remove_duplicates(tools)
+	recipe['primary cooking method'] = most_common(primary_methods)
+	recipe['cooking methods'] = all_methods
 
-	with open('recipe.json', 'w') as outfile:
+	with open('Recipes/recipe.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)
+
+	return recipe

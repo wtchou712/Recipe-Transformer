@@ -4,7 +4,7 @@ from collections import OrderedDict
 
 
 def transformRecipe(transformType):
-	data = open('recipe.json')
+	data = open('Recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -24,13 +24,13 @@ def transformRecipe(transformType):
 			#print keys
 			for k in keys: 
 				if k in ingr['name'].lower():
-					print "match!"
+					#print "match!"
 					# print k
 					# print trans[k]
 					ingredient['name'] = trans[k]
 					break
 		if ingredient.has_key('name') is False:
-			print "nothing found"
+			#print "nothing found"
 			ingredient['name'] = ingr['name']
 		if ingr['measurement'] == "pieces": 
 			ingredient['measurement'] = "pounds"
@@ -54,10 +54,10 @@ def transformRecipe(transformType):
 				#print keys
 				for k in keys: 
 					if k in subdirs.lower():
-						print "direction match!"
-						print k
-						print subdirs
-						print "====================================="
+						#print "direction match!"
+						#print k
+						#print subdirs
+						#print "====================================="
 						subdirs = subdirs.replace(k, trans[k]) 
 						newDirs = subdirs
 						break
@@ -68,13 +68,14 @@ def transformRecipe(transformType):
 
 
 	newRecipe['directions'] = newDirections
-	newRecipe['all cooking methods'] = original['all cooking methods']
+	newRecipe['cooking methods'] = original['cooking methods']
 	newRecipe['servings'] = original['servings']
-	newRecipe['tools'] = original['tools']
-	newRecipe['primary cooking methods'] = original['primary cooking methods']
+	newRecipe['cooking tools'] = original['cooking tools']
+	newRecipe['primary cooking method'] = original['primary cooking method']
 	newRecipe['ingredients'] = newIngredients
+	newRecipe['url'] = original['url']
 
-	with open('recipe-' + transformType + '.json', 'w') as outfile:
+	with open('Recipes/recipe-' + transformType + '.json', 'w') as outfile:
 		    json.dump(OrderedDict(newRecipe), outfile)
 
 
@@ -90,7 +91,7 @@ def remove_duplicates(values):
     return output
 
 def transformMethod():
-	data = open('recipe.json')
+	data = open('Recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -213,9 +214,9 @@ def transformMethod():
 	#replace the cooking methods and tools
 	primaryMethods = original['primary cooking methods']
 	newPrimary = ""
-	print "primary methods"
+	#print "primary methods"
 	for method in primaryMethods:
-		print method
+		#print method
 		if method=="bake":
 			newPrimary="pan-fry"
 		elif method=="roast":
@@ -223,11 +224,11 @@ def transformMethod():
 		else:
 			newPrimary = method
 
-	print "all methods"
-	allMethods = original['all cooking methods']
+	#print "all methods"
+	allMethods = original['cooking methods']
 	newAll = []
 	for method in allMethods:
-		print method
+		#print method
 		if method=="bake":
 			newAll.append("pan-fry")
 		elif method=="roast":
@@ -235,34 +236,30 @@ def transformMethod():
 		else:
 			newAll.append(method)
 
-	tools = original['tools']
-	print "tools"
+	tools = original['cooking tools']
+	#print "tools"
 	newTools =[]
 	for tool in tools:
-		print tool
+		#print tool
 		if tool=="baking dish": 
-			print "baking dish match"
+			#print "baking dish match"
 			newTools.append("frying pan")
 		elif tool=="oven":
 			newTools.append("stove")
 		else:
 			newTools.append(tool)
 
-
-
-
-
-
 	#print directions
 	recipe = {}
 	recipe['ingredients'] = original['ingredients']
 	recipe['directions'] = directions
 	recipe['servings'] = original['servings']
-	recipe['tools'] = remove_duplicates(newTools)
-	recipe['primary cooking methods'] = remove_duplicates(newPrimary)
-	recipe['all cooking methods'] = remove_duplicates(newAll)
+	recipe['cooking tools'] = remove_duplicates(newTools)
+	recipe['primary cooking method'] = remove_duplicates(newPrimary)
+	recipe['cooking methods'] = remove_duplicates(newAll)
+	recipe['url'] = original['url']
 	
-	with open('recipe-bake-to-fry.json', 'w') as outfile:
+	with open('Recipes/recipe-bake-to-fry.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)			
 
 
