@@ -17,6 +17,9 @@ def remove_duplicates(values):
             seen.add(value)
     return output
 
+def most_common(lst):
+    return max(set(lst), key=lst.count)
+
 def parseRecipe(link):
 	page = requests.get(link)
 	tree = html.fromstring(page.text)
@@ -86,7 +89,7 @@ def parseRecipe(link):
 	recipe['directions'] = directions
 	recipe['servings'] = servings
 	recipe['tools'] = remove_duplicates(tools)
-	recipe['primary cooking methods'] = primary_methods
+	recipe['primary cooking methods'] = most_common(primary_methods)
 	recipe['all cooking methods'] = all_methods
 
 	with open('recipe.json', 'w') as outfile:

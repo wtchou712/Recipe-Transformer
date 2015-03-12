@@ -1,7 +1,5 @@
 boil
 bake
-brown
-cook
 deep-fry
 stir-fry
 simmer

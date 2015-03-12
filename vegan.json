@@ -1,5 +1,5 @@
 {
-  "vegetarian": [
+  "vegan": [
     {
         "ground chicken" : "ground chickpea"
     },
@@ -155,6 +155,134 @@
     },
     {
         "chicken" : "tofu"
+    },{
+      "milk" : "almond milk"
+    },
+    {
+      "mozzarella cheese" : "lactose-free mozzarella cheese"
+    },
+    {
+      "parmesan cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "cheddar cheese" : "lactose-free cheddar cheese"
+    },
+    {
+      "asiago cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "american cheese" : "lactose-free american cheese"
+    },
+    {
+      "swiss cheese" : "lactose-free swiss cheese"
+    },
+    {
+      "provolone cheese" : "lactose-free provolone cheese"
+    },
+    {
+      "pepper jack cheese" : "lactose-free pepper jack cheese"
+    },
+    {
+      "ricotta cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "goat cheese" : "lactose-free cream cheese"
+    },
+    {
+      "cream cheese" : "lactose-free cream cheese"
+    },
+    {
+      "mexican cheese" : "lactose-free pepper jack cheese"
+    },
+    {
+      "feta cheese" : "soy feta cheese"
+    },
+    {
+      "paneer cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "blue cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "bleu cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "gruyere cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "cotija cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "romano cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "gouda cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "monterey jack cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "colby cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "brie cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "gorgonzola cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "munster cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "queso blanco cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "cottage cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "processed cheese" : "lactose-free replacement cheese"
+    },
+    {
+      "greek yogurt" : "lactose-free greek yogurt"
+    },
+    {
+      "mascarpone" : ""
+    },
+    {
+      "plain yogurt" : "lactose-free plain yogurt"
+    },
+    {
+      "yogurt" : "lactose-free plain yogurt"
+    },
+    {
+      "whole milk" : "almond milk"
+    },
+    {
+      "1% milk" : "almond milk"
+    },
+    {
+      "skim milk" : "almond milk"
+    },
+    {
+      "milk" : "almond milk"
+    },
+    {
+      "sour cream" : "dairy-free sour cream"
+    },
+    {
+      "heavy cream" : "coconut milk"
+    },
+    {
+      "half and half" : "coconut cream"
+    },
+    {
+      "light cream" : "coconut milk"
+    },
+    {
+      "butter" : "margarine"
+    },
+    {
+      "ice cream" : "soy based ice cream"
     }
   ]
 }
