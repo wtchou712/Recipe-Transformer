@@ -4,7 +4,7 @@ from collections import OrderedDict
 
 
 def transformRecipe(transformType):
-	data = open('../Recipes/recipe.json')
+	data = open('Recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -75,7 +75,7 @@ def transformRecipe(transformType):
 	newRecipe['ingredients'] = newIngredients
 	newRecipe['url'] = original['url']
 
-	with open('../Recipes/recipe-' + transformType + '.json', 'w') as outfile:
+	with open('Recipes/recipe-' + transformType + '.json', 'w') as outfile:
 		    json.dump(OrderedDict(newRecipe), outfile)
 
 
@@ -91,7 +91,7 @@ def remove_duplicates(values):
     return output
 
 def transformMethod():
-	data = open('../Recipes/recipe.json')
+	data = open('Recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -259,7 +259,7 @@ def transformMethod():
 	recipe['cooking methods'] = remove_duplicates(newAll)
 	recipe['url'] = original['url']
 	
-	with open('../Recipes/recipe-bake-to-fry.json', 'w') as outfile:
+	with open('Recipes/recipe-bake-to-fry.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)			
 
 
