@@ -55,10 +55,16 @@
       "organ meats" : "salmon steak"
     },
     {
+      "pork chop" : "scallops"
+    },
+    {
       "pork" : "scallops"
     },
     {
-      "pork chop" : "scallops"
+      "chops" : "scallops"
+    },
+    {
+      "chop" : "scallops"
     },
     {
       "bacon" : "scallops"
@@ -82,7 +88,13 @@
       "chicken breast" : "tilapia"
     },
     {
+      "breast" : "tilapia"
+    },
+    {
       "chicken liver" : "tilapia"
+    },
+    {
+      "liver" : "tilapia"
     },
     {
       "chicken wings" : "tilapia"
@@ -92,6 +104,9 @@
     },
     {
       "chicken thigh" : "tilapia"
+    },
+    {
+      "thigh" : "tilapia"
     },
     {
       "cornish game hen" : "tilapia"

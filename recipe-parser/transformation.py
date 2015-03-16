@@ -4,7 +4,7 @@ from collections import OrderedDict
 
 
 def transformRecipe(transformType):
-	data = open('../Recipes/recipe.json')
+	data = open('../parsed-recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -32,7 +32,7 @@ def transformRecipe(transformType):
 		if ingredient.has_key('name') is False:
 			#print "nothing found"
 			ingredient['name'] = ingr['name']
-		if ingr['measurement'] == "pieces": 
+		if ingr['measurement'] == "units": 
 			ingredient['measurement'] = "pounds"
 			ingredient['quantity'] = str(float(ingr['quantity'])/4);
 		else:
@@ -75,7 +75,7 @@ def transformRecipe(transformType):
 	newRecipe['ingredients'] = newIngredients
 	newRecipe['url'] = original['url']
 
-	with open('../Recipes/recipe-' + transformType + '.json', 'w') as outfile:
+	with open('../parsed-recipes/recipe-' + transformType + '.json', 'w') as outfile:
 		    json.dump(OrderedDict(newRecipe), outfile)
 
 
@@ -91,7 +91,7 @@ def remove_duplicates(values):
     return output
 
 def transformMethod():
-	data = open('../Recipes/recipe.json')
+	data = open('../parsed-recipes/recipe.json')
 	original = json.load(data)
 	#pprint(original)
 	data.close()
@@ -183,15 +183,23 @@ def transformMethod():
 		for x in range(0, len(directions[index])):
 			#print directions[index][x]
 			str1 = directions[index][x]
+			str1 = str1.replace("baking", "frying")
+			str1 = str1.replace("baked", "fried")
 			str1 = str1.replace("bake", "fry")
 			str1 = str1.replace("roast", "fry")
 			str1 = str1.replace("preheated oven", "frying pan")
 			str1 = str1.replace("oven", "frying pan")
+			str1 = str1.replace("cooked", "fried")
+			str1 = str1.replace("cooking", "frying")
 			str1 = str1.replace("cook ", "fry ")
+			str1 = str1.replace("Baking", "Frying")
+			str1 = str1.replace("Baked", "Fried")
 			str1 = str1.replace("Bake", "Fry")
 			str1 = str1.replace("Roast", "Fry")
 			str1 = str1.replace("Preheated oven", "Frying pan")
 			str1 = str1.replace("Oven", "Frying pan")
+			str1 = str1.replace("Cooked", "Fried")
+			str1 = str1.replace("Cooking", "Frying")
 			str1 = str1.replace("Cook", "Fry")
 			str1 = str1.replace("baking dish", "frying pan")
 			str1 = str1.replace("Baking dish" , "Frying pan")
@@ -203,26 +211,29 @@ def transformMethod():
 			words = directions[index][i].split()
 			for k in range(0, len(words)):
 				if "hour" in words[k] or "minute" in words[k]: 
-					words[k-1] = str(int(words[k-1])/5)
-					#now append the new instruction 
-					directions[index][i] = ""
-					for j in range(0, len(words)):
-						directions[index][i] += words[j] + " "
+					if words[k-1] == "an":
+						words[k-1] = "12"
+						directions[index][i]==""
+						for j in range(0, len(words)):
+							directions[index][i]+= words[j] + " "
+					else:
+						words[k-1] = str(float(words[k-1])/5)
+						#now append the new instruction 
+						directions[index][i] = ""
+						for j in range(0, len(words)):
+							directions[index][i] += words[j] + " "
 
 
 
 	#replace the cooking methods and tools
-	primaryMethods = original['primary cooking methods']
+	primaryMethods = original['primary cooking method']
 	newPrimary = ""
-	#print "primary methods"
-	for method in primaryMethods:
-		#print method
-		if method=="bake":
-			newPrimary="pan-fry"
-		elif method=="roast":
-			newPrimary="pan-fry"
-		else:
-			newPrimary = method
+	if primaryMethods=="bake":
+		newPrimary="pan-fry"
+	elif primaryMethods=="roast":
+		newPrimary="pan-fry"
+	else:
+		newPrimary = primaryMethods
 
 	#print "all methods"
 	allMethods = original['cooking methods']
@@ -255,11 +266,11 @@ def transformMethod():
 	recipe['directions'] = directions
 	recipe['servings'] = original['servings']
 	recipe['cooking tools'] = remove_duplicates(newTools)
-	recipe['primary cooking method'] = remove_duplicates(newPrimary)
+	recipe['primary cooking method'] = newPrimary
 	recipe['cooking methods'] = remove_duplicates(newAll)
 	recipe['url'] = original['url']
 	
-	with open('../Recipes/recipe-bake-to-fry.json', 'w') as outfile:
+	with open('../parsed-recipes/recipe-bake-to-fry.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)			
 
 

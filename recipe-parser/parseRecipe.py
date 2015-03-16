@@ -42,14 +42,14 @@ def parseRecipe(link):
 		ing['name'] = ingr_name[i];
 		if "to taste" in ingr_name[i]: 
 			offset+=1
-			ing['quantity'] = "to taste"
-			ing['measurement'] = "N/A"
+			ing['quantity'] = "none"
+			ing['measurement'] = "to taste"
 			#print "offset"
 		else: 
 			quantity = ingr_amount[i-offset].split()
 			if len(quantity) is 1: 
 				ing['quantity'] = quantity[0]
-				ing['measurement'] = "pieces"
+				ing['measurement'] = "units"
 			else:
 				ing['quantity'] = quantity[0]
 				ing['measurement'] = quantity[1]
@@ -93,7 +93,7 @@ def parseRecipe(link):
 	recipe['primary cooking method'] = most_common(primary_methods)
 	recipe['cooking methods'] = remove_duplicates(all_methods)
 
-	with open('../Recipes/recipe.json', 'w') as outfile:
+	with open('../parsed-recipes/recipe.json', 'w') as outfile:
 		    json.dump(OrderedDict(recipe), outfile)
 
 	return recipe

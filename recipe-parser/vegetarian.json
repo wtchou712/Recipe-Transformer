@@ -6,6 +6,7 @@
     {   
         "chicken thigh" : "tofu", 
         "chicken breast" : "tofu",
+        "breasts" : "tofu",
         "breast" : "tofu",
         "veal" : "tofu",
         "bison" : "tofu",
@@ -43,13 +44,19 @@
     {
         "hamburger" : "veggie burger"
     },
-    {   
-        "beef" : "seitan",
-        "oxtail" : "seitan"
-    },
     {
         "ground beef" : "black beans",
         "ground pork" : "black beans"
+    },
+    {   
+        "beef" : "black beans",
+        "oxtail" : "seitan"
+    },
+    {
+        "pork chop": "tempeh"
+    },
+    {
+        "chops" : "tempeh"
     },
     {
         "pork" : "tempeh",
@@ -90,6 +97,9 @@
         "chicken stock" : "vegetable stock",
         "beef stock" : "vegetable stock",
         "beef broth" : "vegetable stock" 
+    },
+    {
+        "broth" : "vegetable stock"
     },
     {
         "meatballs" : "veggie meatballs"

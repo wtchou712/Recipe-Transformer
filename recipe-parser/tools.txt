@@ -30,7 +30,7 @@ butane torch
 butcher block
 butcher paper
 cake and pie server
-cake pan
+cake parchment
 can opener
 thermometer
 casserole dish
@@ -201,3 +201,4 @@ wonder pot
 wooden spoon
 waffle iron
 zester
+microwave safe bowl
