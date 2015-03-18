@@ -12,9 +12,9 @@ from transformation import transformRecipe
 from transformation import transformMethod
 
 
+##USE THIS CODE IF YOU WANT TO RUN IN TERMINAL INSTEAD OF GUI
 # link = raw_input('Copy an allrecipes link here\n')
 # parseRecipe(link)
-
 # print "1. Lactose-free"
 # print "2. Vegetarian"
 # print "3. Low-carb"
@@ -42,9 +42,7 @@ from transformation import transformMethod
 
 
 top = Tkinter.Tk()
-
-
-def info(phrase):
+def getSpecificRecipe(phrase):
     if(phrase=="vegetarian"):
         transformRecipe("vegetarian")
         getrec("recipe-vegetarian")
@@ -78,113 +76,93 @@ def info(phrase):
         getrec("recipe");
 
 def getrec(text):
-    #tkMessageBox.showinfo( "INFO:", input_text.get())
     data = open("../parsed-recipes/"+text+".json")
     original = json.load(data)
-    #print(original)
     data.close()
-    #pprint(original)
 
-    data=original["primary cooking method"]
-    PCM = Text(top,width=50,pady=0,wrap=WORD)
-    PCM.insert(INSERT, "**SCROLLDOWN FOR MORE INGREDIENTS**\n")
-    PCM.insert(INSERT, "Primary Cooking Method: \n");
-    PCM.insert(END, data+"\n\n");
-    PCM.grid(row = 2, column = 1, rowspan =12)
+    #add the primary cooking method to the textbox that will be on the left of the gui
+    primaryCookingMethod=original["primary cooking method"]
+    leftInfoColumn = Text(top,width=50,pady=0,wrap=WORD)
+    leftInfoColumn.insert(INSERT, "**SCROLLDOWN FOR MORE INGREDIENTS**\n")
+    leftInfoColumn.insert(INSERT, "Primary Cooking Method: \n");
+    leftInfoColumn.insert(END, primaryCookingMethod+"\n\n");
+    leftInfoColumn.grid(row = 2, column = 1, rowspan =12)
 
+    #add the cooking methods to the textbox that will be on the left of the gui
+    cookingMethods=original["cooking methods"]
+    methodString=""
+    for method in cookingMethods:
+        methodString= methodString + method + ", "
+    methodString = methodString[:-2]
+    leftInfoColumn.insert(END, "Cooking Methods: \n");
+    leftInfoColumn.insert(END, methodString+"\n\n");
 
-    data=original["cooking methods"]
-    metho=""
-    for cook in data:
-        metho= metho + cook + ", "
-    metho = metho[:-2]
-    #ACM = Text(top,width=50,pady=0,wrap=WORD)
-    PCM.insert(END, "Cooking Methods: \n");
-    PCM.insert(END, metho+"\n\n");
-    #ACM.grid(row = 5, column = 1)
+    #add the cooking tools to the textbox that will be on the left of the gui
+    cookingTools=original["cooking tools"]
+    leftInfoColumn.insert(END, "Tools: \n");
+    toolString=""
+    for tool in cookingTools:
+        toolString= toolString + tool + ", "
+    toolString = toolString[:-2]
+    leftInfoColumn.insert(END, toolString+"\n\n");
 
-    data=original["cooking tools"]
-    #Tool = Text(top,width=50,pady=0,wrap=WORD)
-    PCM.insert(END, "Tools: \n");
-    metho=""
-    for cook in data:
-        metho= metho + cook + ", "
-    metho = metho[:-2]
-    PCM.insert(END, metho+"\n\n");
-    data=original["servings"]
-    PCM.insert(INSERT, "Servings: \n");
-    PCM.insert(END, data[0]+"\n\n");
-    #PCM.grid(row = 5, column = 0)
-    #Tool.grid(row = 6, column = 0)
+    #add the servings to the textbox that will be on the left of the gui
+    servings=original["servings"]
+    leftInfoColumn.insert(INSERT, "Servings: \n");
 
-    data=original["ingredients"]
-    #print data
-    metho=""
-    #IN = Text(top,width=50,pady=0,wrap=WORD)
-    PCM.insert(INSERT, "Ingredients: \n");
-    for ing in data:
-        #print ing;
-        metho= "Name: "+ing['name']+"\nMeasurement: "+ing['measurement']+"\nQuantity: " + ing['quantity']
-        PCM.insert(END, metho+"\n\n");
-    #IN.grid(row = 5, column = 1)
+    #add the ingredients to the textbox that will be on the left of the gui
+    ingredients=original["ingredients"]
+    ingredientString=""
+    leftInfoColumn.insert(INSERT, "Ingredients: \n");
+    for ingr in ingredients:
+        ingredientString= "Name: "+ingr['name']+"\nMeasurement: "+ingr['measurement']+"\nQuantity: " + ingr['quantity']
+        leftInfoColumn.insert(END, ingredientString+"\n\n");
 
-
-    data=original["directions"]
-    #print data
-    metho=""
+    #add the directions to the textbox that will be on the right of the gui
+    directions=original["directions"]
+    directionString=""
     counter=0
-    Dir = Text(top,width=50,pady=0,wrap=WORD)
-    Dir.insert(INSERT, "**SCROLLDOWN FOR MORE DIRECTIONS**\n")
-    Dir.insert(INSERT, "Directions: \n");
-    for dirs in data:
+    rightInfoColumn = Text(top,width=50,pady=0,wrap=WORD)
+    rightInfoColumn.insert(INSERT, "**SCROLLDOWN FOR MORE DIRECTIONS**\n")
+    rightInfoColumn.insert(INSERT, "Directions: \n");
+    for dirs in directions:
         for subdirs in dirs:
-            #print ing;
             counter=counter+1;
-            metho= str(counter)+". "+subdirs
-            Dir.insert(END, metho+"\n");
-    Dir.grid(row = 2, column = 2, rowspan = 12)
+            directionString= str(counter)+". "+subdirs
+            rightInfoColumn.insert(END, directionString+"\n");
+    rightInfoColumn.grid(row = 2, column = 2, rowspan = 12)
 
-
-
-#y= IntVar()
-#y.set(2015)  # initializing the choice, i.e. Python
-
-
-# def ShowChoice():
-#     year= y.get()
-
+#place the input box for the user to enter the recipe url
 input_text=StringVar("")
-# L1 = Label(top, text="URL:", justify=LEFT)
-# L1.grid(row=0, column=1)
-E1 = Entry(top, bd =1, width=50,textvariable=input_text)
-E1.grid(row=0,column=1)
+URL_input = Entry(top, bd =1, width=50,textvariable=input_text)
+URL_input.grid(row=0,column=1)
 
-# Code to add widgets will go here...
-Vege = Tkinter.Button(top, text ="Change to Vegetarian",command= lambda: info("vegetarian"),width=50, height=2, wraplength=40)
-Vegan = Tkinter.Button(top, text ="Change to Vegan",command= lambda: info("vegan"),width=50, height=2, wraplength=40)
-Pesc= Tkinter.Button(top, text ="Change to Pescatarian",command= lambda: info("pescatarian"),width=50, height=2, wraplength=40)
-Lact = Tkinter.Button(top, text ="Change to Lactose-free",command= lambda: info("lactose-free"),width=50, height=2, wraplength=40)
-Lowfat = Tkinter.Button(top, text ="Change to low fat",command= lambda: info("low-fat"),width=50, height=2, wraplength=40)
-Lowcarb = Tkinter.Button(top, text ="Change to low carb",command= lambda: info("low-carb") ,width=50, height=2, wraplength=40)
-Bake = Tkinter.Button(top, text ="Change from bake to stir fry",command= lambda: info("baketostir") ,width=50, height=2, wraplength=40)
-Normal = Tkinter.Button(top, text ="Submit Recipe URL",command= lambda: info("normal"),width=50, height=2, wraplength=40)
+#Set the response when the buttons are pressed and the sizes
+vegetarianTransBtn = Tkinter.Button(top, text ="Change to Vegetarian",command= lambda: getSpecificRecipe("vegetarian"),width=50, height=2, wraplength=40)
+veganTransBtn = Tkinter.Button(top, text ="Change to Vegan",command= lambda: getSpecificRecipe("vegan"),width=50, height=2, wraplength=40)
+pescatarianTransBtn= Tkinter.Button(top, text ="Change to Pescatarian",command= lambda: getSpecificRecipe("pescatarian"),width=50, height=2, wraplength=40)
+lactoseFreeTransBtn = Tkinter.Button(top, text ="Change to Lactose-free",command= lambda: getSpecificRecipe("lactose-free"),width=50, height=2, wraplength=40)
+lowfatTransBtn = Tkinter.Button(top, text ="Change to low fat",command= lambda: getSpecificRecipe("low-fat"),width=50, height=2, wraplength=40)
+lowcarbTransBtn = Tkinter.Button(top, text ="Change to low carb",command= lambda: getSpecificRecipe("low-carb") ,width=50, height=2, wraplength=40)
+bakeToFryBtn= Tkinter.Button(top, text ="Change from bake to stir fry",command= lambda: getSpecificRecipe("baketostir") ,width=50, height=2, wraplength=40)
+parseRecipeBtn = Tkinter.Button(top, text ="Submit Recipe URL",command= lambda: getSpecificRecipe("normal"),width=50, height=2, wraplength=40)
 
-w = Text(top, width=50, height=1,pady=0)
-w2 = Text(top, width=50, height=1,pady=0)
-w.insert(INSERT, "Enter the URL to get the recipe.")
-w2.insert(INSERT, "Click a button to transform it.")
+#Set the instructions at the top of the gui for the user
+instruction1 = Text(top, width=50, height=1,pady=0)
+instruction2 = Text(top, width=50, height=1,pady=0)
+instruction1.insert(INSERT, "Enter the URL to get the recipe.")
+instruction2.insert(INSERT, "Click a button to transform it.")
 
-w.grid(row=0, column=0)
-w2.grid(row=1, column=0)
-Vege.grid(row=2,column=0)
-Vegan.grid(row=3,column=0)
-Pesc.grid(row=4,column=0)
-Lact.grid(row=5,column=0)
-Lowfat.grid(row=6,column=0)
-Lowcarb.grid(row=7,column=0)
-Bake.grid(row=8,column=0)
-Normal.grid(row=0,column=2)
-
-
+#Place all the buttons in the gui grid
+instruction1.grid(row=0, column=0)
+instruction2.grid(row=1, column=0)
+vegetarianTransBtn.grid(row=2,column=0)
+veganTransBtn.grid(row=3,column=0)
+pescatarianTransBtn.grid(row=4,column=0)
+lactoseFreeTransBtn.grid(row=5,column=0)
+lowfatTransBtn.grid(row=6,column=0)
+lowcarbTransBtn.grid(row=7,column=0)
+bakeToFryBtn.grid(row=8,column=0)
+parseRecipeBtn.grid(row=0,column=2)
 
 top.mainloop()

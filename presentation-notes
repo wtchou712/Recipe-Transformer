@@ -1,0 +1,49 @@
+parse recipe:
+
+-use specific class and id tags in the html to get
+	-servings
+	-ingredient amount
+	-ingredient name
+	-directions
+
+	"4 tablespoons"
+
+-if we split "ingredient amount" into an array of words
+	-first is the quantity = 4
+	-rest is measurement = tablespoons
+
+for tools: 
+-we have a text file with list of tools
+-if any in the directions, we push the tool to an array
+-remove duplicates
+
+similar things for cooking methods and primary cooking methods
+
+for primary cooking methods, we get the most common
+
+**NOTE**
+-even though directions not exactly how she wants it, we still have directions in parsed recipe
+-also have servings
+
+
+TRANSFORMING THE RECIPE: 
+
+-everything except bake to stir fry
+
+-take the parsed recipe
+-go through the names of ingredients
+-if they are in our knowledge base dictionary of replacements
+-then we replace the ingredient name
+-the only quantity change we make is if, its in units, so we say 1 unit is a quarter pound
+-then we go through the direcitons and change the ingredients used
+
+BAKE TO STIR FRY
+
+-we convert the baking temperatures in the directions form degrees to low->high
+-we also replace the tools with cooking toosl you would use with stir-frying
+	-i.e. oven -> stovetop
+	-baking pan -> frying pan
+-we add 2 tablesppons of oil for the ingredients because we add direction to get a pan and add oil
+-ex: "preheat oven" -> "place pan on stove and set to specific heat"
+-also change time, divide by 5
+-replace cooking methods and primary cooking method
